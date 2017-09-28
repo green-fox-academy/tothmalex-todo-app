@@ -15,10 +15,13 @@ public class ToDoList {
         } else {}
 
         Task tasks = new Task();
+        AddNew add = new AddNew();
+        AddNew argsadd = new AddNew();
 
         if (args[0].equals("-l")) {
             tasks.tasks();
-        } else {}
+        }if (args[0].equals("-a")) {
+            add.adding(args);
+        }
     }
-
 }
